@@ -1,0 +1,39 @@
+package agendatest
+
+
+rule "agenda_group_1"
+    agenda-group "group_1"
+    enabled true
+    no-loop true
+    when
+    then
+        System.out.println("agenda_group_1");
+end
+
+rule "agenda_group_2"
+    agenda-group "group_1"
+    when
+
+    then
+        System.out.println("agenda_group_2");
+end
+
+
+rule "agenda_group_3"
+    agenda-group "group_2"
+    salience 1
+    auto-focus true
+    when
+    then
+        System.out.println("agenda_group_3");
+end
+
+rule "agenda_group_4"
+    agenda-group "group_2"
+    salience 2
+//    auto-focus true
+    when
+
+    then
+        System.out.println("agenda_group_4");
+end

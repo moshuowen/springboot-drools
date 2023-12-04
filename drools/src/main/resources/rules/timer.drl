@@ -1,0 +1,28 @@
+package testTimer
+import java.util.Date
+
+
+rule "test_timer_1"
+    timer (3s 2s) // 3s后触发， 每次间隔2s
+    when
+
+    then
+    System.out.println("rule timer test_timer_1 started");
+ end
+
+
+rule "test_timer_2"
+    timer (cron: 0/2 * * * * ?) // 间隔2s
+    when
+
+    then
+    System.out.println("rule timer test_timer_1 started" + new Date());
+ end
+
+
+rule "test_effective"
+    date-effective "2023-12-10 00:00" // 生效时间
+    when
+    then
+    System.out.println("test_date_effective_2" + new Date());
+ end

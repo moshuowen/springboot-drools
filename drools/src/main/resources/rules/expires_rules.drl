@@ -1,0 +1,11 @@
+package testexpires
+
+rule "test_expires"
+    date-effective "2023-10-10 00:00"
+    date-expires "2023-12-10 00:00" // 过期时间
+when
+
+then
+
+ System.out.println("test_expires");
+ end

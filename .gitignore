@@ -1,0 +1,13 @@
+# 忽略匹配下列规则的Git 提交 V2.1.0
+
+
+
+
+#git rm -r --cached .
+#git add .
+#git commit -m “update .gitignore”
+
+
+/logs/
+/.idea/
+out

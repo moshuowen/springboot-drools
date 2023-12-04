@@ -1,0 +1,21 @@
+package testGlobal
+
+global  java.lang.Integer count
+
+rule "test_global_1"
+
+when
+
+then
+    count+=10  ;
+    System.out.println("test_global_1 "+ count);
+ end
+
+
+rule "test_global_2"
+
+when
+
+then
+    System.out.println("test_global_2 "+ count);
+ end
